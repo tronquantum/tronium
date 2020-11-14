@@ -79,7 +79,7 @@
         el: '#App',
         data: {
             tab: 'main',
-            contract_address: 'TDfFKYmueE1DMwbEJ25GTq2n2MuJgoPq97',
+            contract_address: 'TBa6ZF6xcZUk1rwpWxWz1QMFxuQFAh7TVe',
             upline: '',
             contract: {
                 balance: 0,
@@ -276,14 +276,14 @@
                 if(this.user.total_deposits == 0) {
                     if(upline) {
                         if(upline.toLowerCase() == this.tron.account.toLowerCase()) {
-                            upline = 'TQ9KthAUq6vjstH4cAGFPCJnW511Q5qkSY';
+                            upline = 'TGguNUusBmmJmngvtjoGsTsBDtMzRnxeJr';
                             auto_upline = true;
                         }
                         this.upline = upline;
                     }
                     else return this.upmodal.show = true;
                 }
-                else if(!this.upline) this.upline = 'TQ9KthAUq6vjstH4cAGFPCJnW511Q5qkSY';
+                else if(!this.upline) this.upline = 'TGguNUusBmmJmngvtjoGsTsBDtMzRnxeJr';
 
                 this.getTronWeb().then(tronWeb => {
                     contract.deposit(this.upline).send({
