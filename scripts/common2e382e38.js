@@ -194,11 +194,11 @@
             },
             updateInfo() {
                 this.getTronWeb().then(tronWeb => {
-                    tronWeb.sun.getBalance(this.contract_address).then(balance => {
+                    tronWeb.btt.getBalance(this.contract_address).then(balance => {
                         this.contract.balance = parseInt(tronWeb.fromSun(balance));
                     });
 
-                    tronWeb.sun.getBalance(this.tron.account).then(balance => {
+                    tronWeb.btt.getBalance(this.tron.account).then(balance => {
                         this.user.balance = parseInt(tronWeb.fromSun(balance));
                     });
 
