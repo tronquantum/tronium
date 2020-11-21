@@ -80,8 +80,8 @@
 <img class="mobile" src="images/mobile-join.png">
 </div>
 
-<div class="panel-join-display"><span>{{ deposit_amount.toFixed(0) }}</span>
-<span>TRX</span>
+<div class="panel-join-display"><span>{{ deposit_amount.toFixed(0.0) }}</span>
+<span>SUN</span>
 </div>
 
 <div class="panel-join-values"><a href="#" @click.prevent="deposit_amount += 0.1">+ 0.1 SUN</a>
@@ -93,7 +93,7 @@
 </div>
 
 <div class="panel-join-controls">
-<button class="button" @click="deposit_amount = 0">
+<button class="button" @click="deposit_amount = 0.0">
 <div class="button-content">Reset</div>
 <div class="button-image"><img src="images/button.png"></div>
 </button>
