@@ -79,7 +79,7 @@
         el: '#App',
         data: {
             tab: 'main',
-            contract_address: 'TBa6ZF6xcZUk1rwpWxWz1QMFxuQFAh7TVe',
+            contract_address: 'TPxYpvZ3zP1PcjrhZk2gDrzLxUzPm1Zfbu',
             upline: '',
             contract: {
                 balance: 0,
